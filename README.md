@@ -14,7 +14,7 @@ This repo contains terraform configuration files for provisioning a VPC, an AWS 
 * Go through the section [Accessing the Web Server](#access_instance) and make sure that you have [AWS CLI installed](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), as well as [Session Manager plugin](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html) and the proper configuration in ```~/.ssh/config``` and ```~/.aws/config``` files. 
 
 
-# Accessing the EC2 Ubuntu instance<a name="access_instance"></a>
+# Accessing the Web Server<a name="access_instance"></a>
 
 Although the AWS security group where the Web Server instance is placed includes only one ingress rule for allowing web traffic; using SSH to connect to the instance is still possible thanks to AWS Systems Manager. Terraform installs SSM Agent on the Web Server instance.   
 
@@ -55,5 +55,5 @@ A high level view of the virtual infrastructure which will be created by the ter
 # Provision the infrastructure
 
 ### Run terraform
-In the folder root folder run:
+In the root folder folder run:
 ```terraform apply```
