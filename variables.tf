@@ -28,11 +28,6 @@ variable "web_server_ip_address" {
   type        = string
 }
 
-variable "web_server_ami" {
-  description = "The AWS ami from which the EC2 instance representing the master node will be created"
-  type        = string
-}
-
 variable "web_server_instance_type" {
   description = "The instance type of the master node"
   type        = string
